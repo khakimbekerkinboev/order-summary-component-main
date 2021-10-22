@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 
+============
+variables
+============
+*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --clr-pale-blue: hsl(225, 100%, 94%);
+  --clr-bright-blue: hsl(245, 75%, 52%);
+  --clr-very-pale-blue: hsl(225, 100%, 98%);
+  --clr-desaturated-blue: hsl(224, 23%, 55%);
+  --clr-dark-blue: hsl(223, 47%, 23%);
+  --spacing: 1px;
+  --transition: all 0.5s linear;
+}
+body {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background: var(--clr-very-pale-blue);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+}
+.card {
+  max-width: 375px;
+  width: 80%;
+  background: white;
+  border-radius: 1rem;
+}
+.card-img {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.card-info {
+  margin: 1.5rem auto;
+  width: 85%;
+}
+#card-title {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--clr-dark-blue);
+  letter-spacing: var(--spacing);
+  font-weight: bold;
+}
+
+.card-text {
+  text-align: center;
+  max-width: 19rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2rem;
+  color: grey;
+}
+.card-middle-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  margin: 1.5rem 0;
+  background: var(--clr-very-pale-blue);
+  border-radius: 0.5rem;
+  padding: 0.9rem;
+}
+.card-middle-text {
+  transform: translateX(-1.8rem);
+  font-size: 0.9rem;
+}
+.card-middle-link {
+  transform: translateX(1rem);
+  font-weight: bold;
+}
+.card-blue-btn {
+  text-align: center;
+  padding: 0.8rem 1rem;
+  background: var(--clr-bright-blue);
+  border-radius: 0.5rem;
+  opacity: 0.9;
+  transition: var(--transition);
+}
+.card-blue-btn:hover {
+  opacity: 1;
+}
+.card-blue-btn a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: var(--spacing);
+}
+.cancel-btn {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  margin: 1rem auto;
+  font-weight: bold;
+  color: grey;
+  letter-spacing: var(--spacing);
+  transition: all 300ms linear;
+}
+
+.cancel-btn:hover {
+  transform: scale(1.05);
+}
